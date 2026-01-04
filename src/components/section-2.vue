@@ -6,8 +6,7 @@
         <!--plan-->
         <div class="section2__content-slide" ref="slide1">
           <div class="section2__image-wrapper">
-            <img 
-              src="https://cdn.prod.website-files.com/638e3eb0a9332ebaeef093b8/638e3f15b3ed3463ebe6038b_pexels-wendy-wei-14397945.jpg"
+            <img :src="imagePlan"
               alt="Plan"
               class="section2__image"
             >
@@ -20,8 +19,7 @@
         <!--design-->
         <div class="section2__content-slide" ref="slide2">
           <div class="section2__image-wrapper">
-            <img 
-              src="https://cdn.prod.website-files.com/638e3eb0a9332ebaeef093b8/638e4092e9575c0f9629ae01_walls.jpg"
+            <img :src="imageDesign"               
               alt="Design"
               class="section2__image"
             >
@@ -34,8 +32,7 @@
         <!--build-->
         <div class="section2__content-slide" ref="slide3">
           <div class="section2__image-wrapper">
-            <img 
-              src="https://cdn.prod.website-files.com/638e3eb0a9332ebaeef093b8/638e45c467fd8f44a5687f97_pexels-cottonbro-studio-5474032.jpg"
+            <img :src="imageBuild"              
               alt="Build"
               class="section2__image"
             >
@@ -57,6 +54,9 @@
 <script>
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import imagePlan from '@/assets/images/imagePlan.jpg';
+import imageDesign from '@/assets/images/imageDesign.jpg';
+import imageBuild from '@/assets/images/imageBuild.jpg';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -64,6 +64,9 @@ export default {
   name: 'Section2Component',
   data() {
     return {
+      imagePlan,
+      imageDesign,
+      imageBuild,
       scrollTriggerInstance: null,
       contentItems: []
     }
