@@ -43,6 +43,13 @@ $font-size-hero: 4.5rem;
   font-style: italic;
 }
 
+@font-face {
+  font-family: "RecifeDisplay";
+  src: url("@/assets/fonts/RecifeDisplay-BookItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
 $spacing-xs: 0.5rem;
 $spacing-sm: 1rem;
 $spacing-md: 2rem;

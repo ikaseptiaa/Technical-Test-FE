@@ -294,6 +294,7 @@ export default {
     }
 
     &__text {
+      font-family: "RecifeDisplay", sans-serif;
       font-size: 8rem;
       font-weight: 300;
       color: #a8ff35;
